@@ -100,7 +100,7 @@ def compute_eer(far, frr):
 # Main function
 def main():
     # Read the data
-    df = pd.read_excel("data_scores.xlsx")  # df has 'similarity score' & 'genuine (1)/imposter (0)' columns.
+    df = pd.read_excel("similarity_scores.xlsx")  # df has 'similarity score' & 'genuine (1)/imposter (0)' columns.
     print(df)
     data_np = df.to_numpy()
     similarity_scores = data_np[:, 0]
